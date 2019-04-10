@@ -77,9 +77,9 @@ ul, li, a {
 }
 
 #about {
-    height: 700px;
+    height: 600px;
     text-align: center;
-    padding-top: 60px;
+    padding-top: 50px;
     min-width: 80%;
 }
 
@@ -94,8 +94,14 @@ ul, li, a {
 h1 {
     font-size: 80px;
     padding: 0;
-    color: #fff;
+    color: #1e1e1e;
     font-weight: 1000;
+    line-height: 70px;
+    position: relative;
+}
+
+#about-quote {
+    margin-top: 10%;
 }
 
 h1, h2, h3 {
@@ -135,7 +141,6 @@ hr {
     width: 90%;
     min-width: 70%;
     margin-bottom: 50px;
-    
     padding-top: 60px;
 }
 .row {
