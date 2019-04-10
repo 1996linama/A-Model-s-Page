@@ -10,7 +10,7 @@ html {
 }
 
 a:visited, a {
-    color: #000;
+    color: #1d1e1e;
 }
 
 a:hover, #bar-title:hover {
@@ -21,7 +21,7 @@ a:hover, #bar-title:hover {
 body {
     margin: 0;
     width: 100%;
-    color: #000;
+    color: #1d1e1e;
     overflow-y: auto;
     
 }
@@ -38,7 +38,7 @@ img#profile {
 
 .inner-field {
     width: 80%;
-    min-width: 80%;
+    min-width: 700px;
 }
 
 .bar {
@@ -88,7 +88,7 @@ ul, li, a {
     background: url('img/1.png');
     background-size: 100%;
     background-repeat: no-repeat;
-    height: 1000px;
+    height: 950px;
 }
 
 h1 {
@@ -104,20 +104,14 @@ h1, h2, h3 {
 
 #header {
     position: absolute;
-    margin-top: 20%;
+    margin-top: 30%;
     margin-left: 5%;
-}
-
-#tagline {
-    font-size: 30px;
-    position: absolute;
-    color: #68a1b7;
 }
 
 hr {
     height: 2px;
     width: 80%;
-    background: linear-gradient(to right, #fff, #000, #fff);
+    background: linear-gradient(to right, #fff, #1d1e1e, #fff);
     border: none;
 }
 
@@ -132,10 +126,12 @@ hr {
 }
 
 #portfolio {
-    height: 800px;
     margin: auto;
     width: 90%;
     min-width: 70%;
+    margin-bottom: 50px;
+    
+    padding-top: 60px;
 }
 .row {
     display: flex;
@@ -143,7 +139,7 @@ hr {
 }
 
 .col {
-    margin: auto;
+    margin: 0 auto;
     width: 48%;
     min-width: 48%;
 }
@@ -156,4 +152,9 @@ hr {
 
 .gallery-image:hover{
     filter: grayscale(1.0);
+}
+
+hr#glance {
+    margin-left: 0;
+    background: linear-gradient(to right,#1d1e1e, #fff);
 }
