@@ -16,6 +16,8 @@ $(document).ready(function() {
       if (inView(this) === true) {
         if (event === "bounceIn") {
           $(this).addClass("animated bounceIn");
+        } else if (event === "fadeIn") {
+          $(this).addClass("animated fadeIn");
         } else if (event === "fadeInUp") {
           $(this).addClass("animated fadeInUp");
         } else if (event === "fadeInRight") {
