@@ -1,19 +1,19 @@
 $(document).ready(function() {
-  // Check if element is scrolled into view
-  function isScrolledIntoView(elem) {
-    var docViewTop = $(window).scrollTop();
-    var docViewBottom = docViewTop + $(window).height();
 
-    var elemTop = $(elem).offset().top;
-    var elemBottom = elemTop + $(elem).height();
+  function inView(node) {
+    const docTop = $(window).scrollTop();
+    const docBottom = docTop + $(window).height();
 
-    return elemBottom <= docViewBottom && elemTop >= docViewTop;
+    const nodeTop = $(node).offset().top;
+    const nodeBottom = nodeTop + $(node).height();
+
+    return nodeBottom <= docBottom && nodeTop >= docTop;
   }
-  // If element is scrolled into view, fade it in
+
   $(window).scroll(function() {
     $(".scrolling").each(function() {
       const event = $(this).data("event");
-      if (isScrolledIntoView(this) === true) {
+      if (inView(this) === true) {
         if (event === "bounceIn") {
           $(this).addClass("animated bounceIn");
         } else if (event === "fadeInUp") {

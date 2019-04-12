@@ -126,6 +126,16 @@ hr {
     border: none;
 }
 
+#header {
+    color: #ffffff;
+    font-size: 60px;
+    padding: 0;
+    margin-top: 50%;
+    margin-left: 5%;
+    position: absolute;
+    opacity: 0;
+}
+
 #about-body {
     width: 80%;
     min-width: 60%;
@@ -140,7 +150,7 @@ hr {
     margin: auto;
     width: 90%;
     min-width: 70%;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
     padding-top: 60px;
 }
 
@@ -185,8 +195,12 @@ hr#glance {
     }
 
     .inner-field {
-        width: 100%;
-        
+        width: 100%;      
+    }
+
+    #header {
+        opacity: 1;
+        transition: 1.2s ease-in;
     }
 
     body {
