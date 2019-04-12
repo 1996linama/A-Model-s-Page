@@ -23,6 +23,7 @@ body {
     width: 100%;
     color: #1d1e1e;
     overflow-y: auto;
+    overflow-x: hidden;
     
 }
 
@@ -30,33 +31,43 @@ body {
     padding: 0;
 }
 
-img#profile {
-    width: 300px;
-    clip-path: circle(125px at center);
-    margin: 0;
-}
-
 .inner-field {
     width: 80%;
-    min-width: 700px;
+    min-width: 575px;
 }
 
+img#profile {
+    width: 200px;
+    clip-path: circle(100px at center);
+    margin-bottom: 40px;
+    
+}
+
+
+
 .bar {
-    margin-left: 200px;
-    width: 350px;
-    height: 800px;
+    margin-left: 10%;
+    width: 275px;
+    height: 100%;
     overflow: hidden;
     z-index: 100;
     padding-top: 100px;
     padding-bottom: 50px;
-    float: left;
     text-transform: uppercase;
     text-align: center;
     background-color: #efefef;
     color: #000;
     box-shadow: inset 0 0 25px #dddddd;
     position: fixed;
-    
+    display: inline-block;
+}
+
+.content {
+    display: inline-block;
+    width: 70%;
+    margin-left: calc(10% + 275px);
+    position: absolute;
+    min-width: 50%; 
 }
 
 .navbar {
@@ -70,14 +81,7 @@ ul, li, a {
     padding: 0;
 }
 
-.content {
-    float: right;
-    width: calc(100% - 550px); 
-
-}
-
 #about {
-    height: 600px;
     text-align: center;
     padding-top: 50px;
     min-width: 80%;
@@ -86,9 +90,10 @@ ul, li, a {
 
 #main {
     background: url('img/1.png');
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
-    height: 950px;
+    height: 775px;
+    opacity: 0;
 }
 
 h1 {
@@ -102,6 +107,7 @@ h1 {
 
 #about-quote {
     margin-top: 10%;
+    opacity: 0;
 }
 
 h1, h2, h3 {
@@ -111,12 +117,6 @@ h1, h2, h3 {
 h3 {
     color: #464647;
     font-weight: 300;
-}
-
-#header {
-    position: absolute;
-    margin-top: 30%;
-    margin-left: 5%;
 }
 
 hr {
@@ -136,13 +136,15 @@ hr {
     font-size: 14px;
 }
 
-#portfolio {
+#gallery {
     margin: auto;
     width: 90%;
     min-width: 70%;
     margin-bottom: 50px;
     padding-top: 60px;
 }
+
+
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -158,6 +160,7 @@ hr {
   margin-top: 10px;
   width: 100%;
   min-width: 100%;
+  opacity: 0;
 }
 
 .gallery-image:hover{
@@ -165,6 +168,28 @@ hr {
 }
 
 hr#glance {
-    margin-left: 0;
+    margin-left: 5px;
     background: linear-gradient(to right,#1d1e1e, #fff);
+}
+
+@media screen and (max-width: 925px){
+    .bar {
+        transition: 1s ease-in;
+        transform: translate(-500px, 0);
+    }
+
+    .content {
+        float: left;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .inner-field {
+        width: 100%;
+        
+    }
+
+    body {
+        overflow-x: hidden;
+    }
 }
