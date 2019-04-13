@@ -89,7 +89,7 @@ a {
 }
 
 #main {
-  background: url("img/1.png");
+  background: url("../../img/1.png");
   background-size: cover;
   background-repeat: no-repeat;
   height: 775px;

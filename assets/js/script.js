@@ -7,7 +7,7 @@ $(document).ready(function() {
     const nodeTop = $(node).offset().top;
     const nodeBottom = nodeTop + $(node).height();
 
-    return nodeBottom <= docBottom && nodeTop >= docTop - 50;
+    return nodeBottom - 50 <= docBottom && nodeTop >= docTop - 50;
   }
 
   $(window).scroll(function() {
