@@ -39,9 +39,9 @@ body {
 }
 
 img#profile {
-  width: 200px;
-  clip-path: circle(100px at center);
-  margin-bottom: 40px;
+  width: 175px;
+  clip-path: circle(85px at center);
+  margin-bottom: 30px;
 }
 
 .bar {
@@ -70,7 +70,7 @@ img#profile {
 }
 
 .navbar {
-  font-size: 15px;
+  font-size: 13px;
 }
 
 ul,

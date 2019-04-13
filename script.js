@@ -10,8 +10,8 @@ $(document).ready(function() {
     return nodeBottom <= docBottom && nodeTop >= docTop - 50;
   }
 
-  $(window).scroll(function() {
-    $(".scrolling").each(function() {
+  $(window).scroll(() => {
+    $(".scrolling").each(() => {
       const event = $(this).data("event");
       if (inView(this) === true) {
         if (event === "bounceIn") {
