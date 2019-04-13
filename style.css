@@ -1,170 +1,174 @@
-@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic');
-@import url('https://fonts.googleapis.com/css?family=Hind+Siliguri');
+@import url("https://fonts.googleapis.com/css?family=Nanum+Gothic");
+@import url("https://fonts.googleapis.com/css?family=Hind+Siliguri");
 
 html {
-    height: 100%;
-    max-width: 100%;
-    min-width: 100%;
-    margin: 0;
-    font-family: Nanum Gothic;
+  height: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  margin: 0;
+  font-family: Nanum Gothic;
 }
 
-a:visited, a {
-    color: #464647;
+a:visited,
+a {
+  color: #464647;
 }
 
-a:hover, #bar-title:hover {
-    transition: 0.4s linear;
-    filter: blur(2px);
+a:hover,
+#bar-title:hover {
+  transition: 0.4s linear;
+  filter: blur(2px);
 }
 
 body {
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    color: #1d1e1e;
-    overflow-y: auto;
-    overflow-x: hidden;
-    
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  color: #1d1e1e;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .container {
-    padding: 0;
+  padding: 0;
 }
 
 .inner-field {
-    width: 80%;
-    min-width: 575px;
+  width: 80%;
+  min-width: 575px;
 }
 
 img#profile {
-    width: 200px;
-    clip-path: circle(100px at center);
-    margin-bottom: 40px;
-    
+  width: 200px;
+  clip-path: circle(100px at center);
+  margin-bottom: 40px;
 }
 
-
-
 .bar {
-    margin-left: 10%;
-    width: 275px;
-    height: 100%;
-    overflow: hidden;
-    z-index: 100;
-    padding-top: 100px;
-    padding-bottom: 50px;
-    text-transform: uppercase;
-    text-align: center;
-    background-color: #efefef;
-    color: #000;
-    box-shadow: inset 0 0 25px #dddddd;
-    position: fixed;
-    display: inline-block;
+  margin-left: 10%;
+  width: 275px;
+  height: 100%;
+  overflow: hidden;
+  z-index: 100;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #efefef;
+  color: #000;
+  box-shadow: inset 0 0 25px #dddddd;
+  position: fixed;
+  display: inline-block;
 }
 
 .content {
-    display: inline-block;
-    width: 70%;
-    margin-left: calc(10% + 275px);
-    position: absolute;
-    min-width: 50%; 
+  display: inline-block;
+  width: 70%;
+  margin-left: calc(10% + 275px);
+  position: absolute;
+  min-width: 50%;
 }
 
 .navbar {
-    font-size: 15px;
+  font-size: 15px;
 }
 
-ul, li, a {
-    text-decoration: none;
-    list-style: none;
-    margin: 0 0 20px 0;
-    padding: 0;
+ul,
+li,
+a {
+  text-decoration: none;
+  list-style: none;
+  margin: 0 0 20px 0;
+  padding: 0;
 }
 
 #about {
-    text-align: center;
-    padding-top: 50px;
-    min-width: 80%;
+  text-align: center;
+  padding-top: 50px;
+  min-width: 80%;
 }
 
-
 #main {
-    background: url('img/1.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 775px;
-    opacity: 0;
+  background: url("img/1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 775px;
+  opacity: 0;
 }
 
 h1 {
-    font-size: 80px;
-    padding: 0;
-    color: #1e1e1e;
-    font-weight: 1000;
-    line-height: 70px;
-    position: relative;
+  font-size: 80px;
+  padding: 0;
+  color: #1e1e1e;
+  font-weight: 1000;
+  line-height: 70px;
+  position: relative;
 }
 
 #about-quote {
-    margin-top: 10%;
-    opacity: 0;
+  margin-top: 10%;
+  opacity: 0;
 }
 
-h1, h2, h3 {
-    margin: 0;
+h1,
+h2,
+h3 {
+  margin: 0;
 }
 
 h3 {
-    color: #464647;
-    font-weight: 300;
+  color: #464647;
+  font-weight: 300;
 }
 
 hr {
-    height: 2px;
-    width: 80%;
-    background: linear-gradient(to right, #fff, #1d1e1e, #fff);
-    border: none;
+  height: 2px;
+  width: 80%;
+  background: linear-gradient(to right, #fff, #1d1e1e, #fff);
+  border: none;
 }
 
 #header {
-    color: #ffffff;
-    font-size: 60px;
-    padding: 0;
-    margin-top: 50%;
-    margin-left: 5%;
-    position: absolute;
-    opacity: 0;
+  color: #ffffff;
+  font-size: 60px;
+  padding: 0;
+  margin-top: 50%;
+  margin-left: 5%;
+  position: absolute;
+  opacity: 0;
 }
 
 #about-body {
-    width: 80%;
-    min-width: 60%;
-    margin: auto;
-    font-family: Hind Siliguri;
-    line-height: 35px;
-    font-weight: 300;
-    font-size: 14px;
+  width: 80%;
+  min-width: 60%;
+  margin: auto;
+  font-family: Hind Siliguri;
+  line-height: 35px;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+#about-content {
+    opacity: 0;
 }
 
 #gallery {
-    margin: auto;
-    width: 90%;
-    min-width: 70%;
-    margin-bottom: 100px;
-    padding-top: 60px;
+  margin: auto;
+  width: 90%;
+  min-width: 70%;
+  margin-bottom: 100px;
+  padding-top: 60px;
 }
 
-
 .row {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .col {
-    margin: 0 auto;
-    width: 48%;
-    min-width: 48%;
+  margin: 0 auto;
+  width: 48%;
+  min-width: 48%;
 }
 
 .gallery-image {
@@ -174,45 +178,52 @@ hr {
   opacity: 0;
 }
 
-.gallery-image:hover{
-    filter: grayscale(1.0);
+.gallery-image:hover {
+  filter: grayscale(1);
 }
 
 hr#glance {
-    margin-left: 5px;
-    background: linear-gradient(to right,#1d1e1e, #fff);
+  margin-left: 5px;
+  background: linear-gradient(to right, #1d1e1e, #fff);
 }
 
-@media screen and (max-width: 925px){
-    .bar {
-        transition: 1s ease-in;
-        transform: translate(-500px, 0);
-    }
+img#about-quote-decor {
+  width: 350px;
+  margin: auto;
+  opacity: 0;
+}
 
-    body {
-        min-width: 100%;
-        min-height: 100%;
-    }
 
-    .content {
-        float: left;
-        width: 100%;
-        height: 100%;
-        margin-left: 0;
-    }
+@media screen and (max-width: 925px) {
+  .bar {
+    transition: 1s ease-in;
+    transform: translate(-500px, 0);
+  }
 
-    .inner-field {
-        width: 100%;  
-        height: 100%; 
-        min-width: 80%;   
-    }
+  body {
+    min-width: 100%;
+    min-height: 100%;
+  }
 
-    #header {
-        opacity: 1;
-        transition: 1.2s ease-in;
-    }
+  .content {
+    float: left;
+    width: 100%;
+    height: 100%;
+    margin-left: 0;
+  }
 
-    body {
-        overflow-x: hidden;
-    }
+  .inner-field {
+    width: 100%;
+    height: 100%;
+    min-width: 80%;
+  }
+
+  #header {
+    opacity: 1;
+    transition: 1.2s ease-in;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
 }
